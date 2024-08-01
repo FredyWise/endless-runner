@@ -10,7 +10,6 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	position.z -= SPEED * delta
-	
-	if position.z <= -4:
+	if round(position.z) <= -4:
 		MAIN.spawnRoad(MAIN.amnt -5)
 		queue_free()
