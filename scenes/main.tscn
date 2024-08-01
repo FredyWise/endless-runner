@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dhjxf8pkyrj1b"]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_av6k7"]
+[ext_resource type="PackedScene" uid="uid://b33ltr2lyah81" path="res://scenes/orang.tscn" id="1_dbs1y"]
+[ext_resource type="Script" path="res://scripts/Camera.gd" id="3_2b4a6"]
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_av6k7")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-1, -4.37114e-08, 7.57103e-08, 0, 0.866025, 0.5, -8.74228e-08, 0.5, -0.866025, 0, 2.86485, -2)
+script = ExtResource("3_2b4a6")
+
+[node name="Root Scene" parent="Camera3D" instance=ExtResource("1_dbs1y")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, -2.18557e-08, 0.433013, 0.25, 3.78552e-08, 0.25, -0.433013, -1.74846e-07, -1.48103, -3.16447)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 0.939764, 0.341823, 0, -0.341823, 0.939764, 0, 1.40382, 1.02678)
