@@ -1,6 +1,6 @@
 extends CSGCombiner3D
 
-var SPEED = 3
+var SPEED = 5
 var MAIN
 # Called when the node enters the scene tree for the first time.
 func _ready():

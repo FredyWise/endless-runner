@@ -12,6 +12,7 @@ albedo_texture = ExtResource("2_eqjt4")
 uv1_triplanar = true
 
 [node name="Jalan" type="CSGCombiner3D"]
+use_collision = true
 script = ExtResource("1_n36go")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
