@@ -8,23 +8,37 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Container" type="Container" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -50.5
+offset_right = 35.0
+offset_bottom = 50.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Container"]
+[node name="Video" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
+text = "Video"
 
-[node name="PlayButton" type="Button" parent="Container/VBoxContainer"]
+[node name="Audio" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-text = "Play"
+text = "Audio"
 
-[node name="SettingsButton" type="Button" parent="Container/VBoxContainer"]
-layout_mode = 2
-text = "Settings"
-
-[node name="ExitButton" type="Button" parent="Container/VBoxContainer"]
+[node name="ExitButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 text = "Exit"
+
+[node name="BackFromSettings" type="Button" parent="."]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+rotation = 0.0707034
+text = "<"

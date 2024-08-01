@@ -13,3 +13,4 @@ func _process(delta):
 	if round(position.z) <= -4:
 		MAIN.spawnRoad(MAIN.amnt -5)
 		queue_free()
+
